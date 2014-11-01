@@ -1,0 +1,16 @@
+{
+  "name": "patchwork",
+  "main": "./lib/patchwork",
+  "version": "0.0.1",
+  "description": "Atom package for working with cut/paste of diff output in source files",
+  "activationCommands": {
+    "atom-workspace": "patchwork:toggle"
+  },
+  "repository": "https://github.com/jwir3/patchwork",
+  "license": "MPL2",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}

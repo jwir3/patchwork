@@ -1,7 +1,7 @@
 License and Copyright
 ========================
 
-Patchwork is a free software package; you can redistribute and/or modify the codes and scripts under the terms of the MPL2 license. Go here [MPL2.0](http://www.mozilla.org/MPL/2.0) for more details on the license.
+Patchwork is a free software package; you can redistribute and/or modify the codes and scripts under the terms of the [Mozilla Public License 2.0](http://www.mozilla.org/MPL/2.0).
 
 The Patchwork software package was developed by [Scott Johnson](mailto:jaywir3@gmail.com).
 

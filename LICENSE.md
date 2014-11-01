@@ -1,4 +1,4 @@
-License and Copyright:
+License and Copyright
 ========================
 
 Patchwork is a free software package; you can redistribute and/or modify the codes and scripts under the terms of the MPL2 license. Go here [MPL2.0](http://www.mozilla.org/MPL/2.0) for more details on the license.
@@ -10,7 +10,7 @@ This package is distributed in the hope that it will be useful, but WITHOUT ANY 
 If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
 ```
 /**
- * Copyleft (C) 2014 Scott Johnson
+ * Copyright (C) 2014 Scott Johnson
  * Contact: jaywir3@gmail.com (Scott)
  * This program is a free software; you can redistribute it and/or modify it under the terms of MPL2 license.
  * The Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL

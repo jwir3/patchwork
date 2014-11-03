@@ -2,8 +2,8 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggle patchwork'
-      'command': 'patchwork:toggle'
+      'label': 'Activate patchwork'
+      'command': 'patchwork:activate'
     }
   ]
 'menu': [
@@ -13,8 +13,8 @@
       'label': 'patchwork'
       'submenu': [
         {
-          'label': 'Toggle'
-          'command': 'patchwork:toggle'
+          'label': 'Activate'
+          'command': 'patchwork:activate'
         }
       ]
     ]

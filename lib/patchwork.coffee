@@ -1,13 +1,31 @@
-PatchworkView = require './patchwork-view'
-
 module.exports =
-  patchworkView: null
+  class Patchwork
+    enabled = false
+    @activate: -> new Patchwork()
+    constructor: ->
+      # Create root element
+      # @element = document.createElement('div')
+      # @element.classList.add('patchwork',  'overlay', 'from-top')
 
-  activate: (state) ->
-    @patchworkView = new PatchworkView(state.patchworkViewState)
+      # Register command that toggles this view
+      atom.commands.add 'atom-workspace', 'patchwork:toggle': => @toggle()
 
-  deactivate: ->
-    @patchworkView.destroy()
+    # Returns an object that can be retrieved when package is activated
+    # serialize: ->
 
-  serialize: ->
-    patchworkViewState: @patchworkView.serialize()
+    # Tear down any state and detach
+    destroy: ->
+      @element.remove()
+
+    toggle: ->
+      editor = atom.workspace.getActiveTextEditor()
+      editorText = editor.getText()
+      leadingPlusRe = /^(\s)*\+/mg;
+      textWithoutPatch = editorText.replace(leadingPlusRe, "");
+      editor.setText(textWithoutPatch)
+
+  # serialize: ->
+  #   patchworkViewState: @patchworkView.serialize()
+
+  # isEnabled: ->
+  #   return @patchworkView isEnabled

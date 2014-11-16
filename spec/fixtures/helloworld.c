@@ -9,3 +9,11 @@ int main (int argc, char** argv) {
 
   printf("Hello World!\n");
 }
+
+int doTheSameAsMain() {
+  int i = 0;
+  while (i < 35) {
+    printf("***** DEBUG_jwir3: i is currently: %d\n",  i);
+    i++;
+  }
+}

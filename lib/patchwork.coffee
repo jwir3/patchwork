@@ -22,10 +22,15 @@ module.exports =
       editorText = editor.getText()
       leadingPlusRe = /^(\s)*\+/mg;
       textWithoutPatch = editorText.replace(leadingPlusRe, "");
-      editor.setText(textWithoutPatch)
+      textLines = textWithoutPatch.split('\n')
+      finalLines = []
 
-  # serialize: ->
-  #   patchworkViewState: @patchworkView.serialize()
+      ###
+      We don't worry about the newline at the end of the file - atom always
+      puts in a trailing newline, so we just skip it.
+      ###
+      for i in [0..textLines.length-1] by 1
+        if !textLines[i] || textLines[i].search(/^(\s)*-(.*)$/g) == -1
+          finalLines.push(textLines[i])
 
-  # isEnabled: ->
-  #   return @patchworkView isEnabled
+      editor.setText(finalLines.join('\n'))

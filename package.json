@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "description": "Atom package for working with cut/paste of diff output in source files",
   "activationCommands": {
-    "atom-workspace": "patchwork:toggle"
+    "atom-workspace": "patchwork:depatchify"
   },
   "repository": "https://github.com/jwir3/patchwork",
   "license": "MPL2",

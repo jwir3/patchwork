@@ -28,7 +28,7 @@ with '-' signs:
 Using Patchwork
 -------------
 
-You can either use the keyboard shortcut (by default <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>P</kbd>), or activate Patchwork from the Packages menu, under Packages -> Patchwork -> Toggle.
+You can either use the keyboard shortcut (by default <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>P</kbd>), or activate Patchwork from the Packages menu, under Packages -> Patchwork -> Remove Patch Annotations.
 
 FAQ
 -------------

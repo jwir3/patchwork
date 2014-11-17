@@ -2,8 +2,8 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggle Patchwork'
-      'command': 'patchwork:toggle'
+      'label': 'Remove Patch Annotations'
+      'command': 'patchwork:depatchify'
     }
   ]
 'menu': [
@@ -13,8 +13,8 @@
       'label': 'Patchwork'
       'submenu': [
         {
-          'label': 'Toggle'
-          'command': 'patchwork:toggle'
+          'label': 'Remove Patch Annotations'
+          'command': 'patchwork:depatchify'
         }
       ]
     ]

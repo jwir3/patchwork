@@ -3,21 +3,14 @@ module.exports =
     enabled = false
     @activate: -> new Patchwork()
     constructor: ->
-      # Create root element
-      # @element = document.createElement('div')
-      # @element.classList.add('patchwork',  'overlay', 'from-top')
-
-      # Register command that toggles this view
-      atom.commands.add 'atom-workspace', 'patchwork:toggle': => @toggle()
-
-    # Returns an object that can be retrieved when package is activated
-    # serialize: ->
+      # Register command that depatchifies the currently open file in the editor
+      atom.workspaceView.command 'patchwork:depatchify', => @depatchify()
 
     # Tear down any state and detach
     destroy: ->
       @element.remove()
 
-    toggle: ->
+    depatchify: ->
       editor = atom.workspace.getActiveTextEditor()
       editorText = editor.getText()
       leadingPlusRe = /^(\s)*\+/mg;

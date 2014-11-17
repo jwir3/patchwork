@@ -30,7 +30,7 @@ describe 'Patchwork', ->
 
   describe "when the patchwork package is enabled", ->
     it "should make the Patchwork object enabled", ->
-      atom.commands.dispatch atom.workspaceView.element, 'patchwork:toggle'
+      atom.commands.dispatch atom.workspaceView.element, 'patchwork:depatchify'
       expect(patchworkObj).not.toBe(undefined)
 
   describe "when the application is first loaded", ->
@@ -42,7 +42,7 @@ describe 'Patchwork', ->
 
   describe "when the patchwork package is activated", ->
     it "should show the file helloworld.c being the same as helloworld.c.patch", ->
-      atom.commands.dispatch atom.workspaceView.element, 'patchwork:toggle'
+      atom.commands.dispatch atom.workspaceView.element, 'patchwork:depatchify'
       patchLines = atom.workspace.getActiveTextEditor().getText().split('\n')
       expectedLines = helloWorldFile.split('\n')
       expect(patchLines.length).toBe(expectedLines.length)
